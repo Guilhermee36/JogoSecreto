@@ -1,13 +1,27 @@
 :root {
     --color-primary: #4B69FD;
     --color-secondary: #5719e6;
-    --color-tertiary: #C4C4C4;
-    --color-button: #fe2b2b;
+    --color-tertiary: #5e5e5e;
+    --color-button: #3421e7;
     --color-button-hover: #e55720;
-    --color-text: #444444;
-    --color-white: #FFFFFF;
+    --color-text: #4e1616;
+    --color-white: rgb(0, 0, 0);
+    --color-black: #000
 }
-
+h4{
+    background-color: rgb(185, 32, 32);
+    padding: 10px 40px 10px 40px;
+    border-radius: 20px;
+    font-family: "Merriweather", serif;
+    text-align: center;
+}
+p{
+    background-color: rgb(185, 53, 12);
+    padding: 50px;
+    border-radius: 20px;
+    font-family: "Merriweather", serif;
+    text-align: center;
+}
 /* Estilos gerais */
 * {
     margin: 0;
@@ -37,19 +51,26 @@ body {
     justify-content: center;
     align-items: center;
     padding: 40px 0 0;
+    background-image: url(img/ceu.png);
+    
 }
+
+
 
 /* Seção de entrada */
 .input-section {
     flex: 60%;
-    background-color: var(--color-secondary);
+    background-image: url(img/dia.png);
     border: 1px solid #000;
-    border-radius: 64px 64px 0 0;
+    border-radius: 64px 64px 0px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
     width: 100%;
+    color: var(--color-black);
+
+    
 }
 
 /* Títulos */
@@ -58,16 +79,22 @@ body {
     font-family: "Merriweather", serif;
     font-weight: 900;
     font-style: italic;
-    color: var(--color-white);
+    color: #000000;
+    background-color: blue;
+    padding: 10px 40px 10px 40px;
+    border-radius: 20px;
+    font-family: "Merriweather", serif;
+    text-align: center;
+
 }
 
 .section-title {
-    font-family: "Inter", serif;
+    font-family: "Merriweather", serif;
     font-size: 36px;
     font-weight: 700;
-    color: var(--color-primary);
     margin: 10px 0;
     text-align: center;
+    color:rgb(0, 0, 0)
 }
 
 /* Contêineres de entrada e botão */
@@ -82,9 +109,11 @@ body {
 .input-name {
     width: 100%;
     padding: 10px;
-    border: 2px solid #000;
+    border: 2px solid #f8f3f3;
     border-radius: 25px 0 0 25px;
     font-size: 16px;
+    background-color: #020000;
+    color: #000;
 }
 
 .button-container {
@@ -101,22 +130,24 @@ body {
     border-right: none;
     border-radius: 25px 0 0 25px;
     font-family: "Merriweather", serif;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+
 }
 
 /* Estilos de botão */
 button {
     padding: 15px 30px;
-    font-family: "Inter", sans-serif;
+    font-family: "Merriweather", serif;
     font-size: 16px;
-    border: 2px solid #000;
+    border: 2px solid #000000;
     border-radius: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
     cursor: pointer;
+    
 }
 
 .button-add {
-    background-color: var(--color-tertiary);
+    background-color: var(--color-button);
     color: var(--color-text);
     border-radius: 0 25px 25px 0;
 }
@@ -151,6 +182,7 @@ ul {
     color: var(--color-white);
     background-color: var(--color-button);
     font-size: 16px;
+    margin-bottom: 50px;
 }
 
 .button-draw img {

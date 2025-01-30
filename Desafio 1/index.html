@@ -13,18 +13,24 @@
 <body>
     <main class="main-content">
         <header class="header-banner">
-            <h1 class="main-title">Amigo Secreto</h1>
-            <img src="assets/amigo-secreto.png" alt="Imagem representativa de amigo secreto">
+            <h1 class="main-title">Sonic Secret Friends</h1>
+            <img src="img/sonicda1.gif" alt="Imagem representativa de amigo secreto">
         </header>
         
         <section class="input-section">
-            <h2 class="section-title">Digite o nome dos seus amigos</h2>
+            <h2 class="section-title">Digite o nome dos amigos dele </h2>
+            <br>
+
+            <h4 id="listaTit">Lista de amigos</h4>
+            <br>
+            <p id="listaAmigos"></p>
+            <br>
+
             <div class="input-wrapper">
                 <input type="text" id="amigo" class="input-name" placeholder="Digite um nome">
                 <button class="button-add" onclick="adicionarAmigo()">Adicionar</button>
             </div>
-           
-            <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
+
             <ul id="resultado" class="result-list" aria-live="polite"></ul>
 
             <div class="button-container">
@@ -33,6 +39,8 @@
                     Sortear amigo
                 </button>
             </div>
+
+            <marquee><img src="img/sonic_logo.png" align="center"></marquee>
         </section>
     </main>
 
