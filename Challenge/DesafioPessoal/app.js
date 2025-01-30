@@ -14,23 +14,23 @@ function adicionarAmigo() {
     }
     ListaNomes.push(nome);
     atualizarLista();
-    document.getElementById('amigo').value = ''; // Limpa o input
+    document.getElementById('amigo').value = ''; // Limpar o input...
 }
 
 function atualizarLista() {
     let p = document.getElementById('listaAmigos');
-    p.innerHTML = ListaNomes.join('<br>'); // Exibe os nomes um abaixo do outro
+    p.innerHTML = ListaNomes.join('<br>'); 
 }
 
 function sortearAmigo() {
-    // Se todos já foram sorteados, exibe um alerta e reseta a lista
+    
     if (ListaSorteados.length === ListaNomes.length && ListaNomes.length > 0) {
         alert('Todos os amigos já foram sorteados! Reiniciando a lista.');
-        ListaSorteados = []; // Reinicia a lista de sorteados
+        ListaSorteados = []; 
         return;
     }
 
-    // Se a lista estiver vazia, exibe um erro
+    
     if (ListaNomes.length === 0) {
         alert('Erro: Nenhum nome foi adicionado para o sorteio.');
         return;
@@ -38,13 +38,13 @@ function sortearAmigo() {
 
     let nomeSorteado;
 
-    // Sorteia um nome que ainda não foi sorteado
+    
     do {
         let index = Math.floor(Math.random() * ListaNomes.length);
         nomeSorteado = ListaNomes[index];
     } while (ListaSorteados.includes(nomeSorteado));
 
-    ListaSorteados.push(nomeSorteado); // Adiciona o nome à lista de sorteados
+    ListaSorteados.push(nomeSorteado);
     alert(`Nome sorteado: ${nomeSorteado}`);
 }
 

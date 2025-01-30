@@ -119,6 +119,7 @@ body {
 .button-container {
     width: 300px;
     justify-content: center;
+    
 }
 
 /* Estilos de entrada de texto */
@@ -143,6 +144,7 @@ button {
     border-radius: 25px;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
     cursor: pointer;
+    
     
 }
 
@@ -183,6 +185,7 @@ ul {
     background-color: var(--color-button);
     font-size: 16px;
     margin-bottom: 50px;
+    
 }
 
 .button-draw img {
